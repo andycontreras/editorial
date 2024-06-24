@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Octopodo Editorial</title>
+		<script type="module" src="index.js"></script>
+		<link
+			rel="shortcut icon"
+			href="./img/logo-ocotopodo-icon.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h2>Libros para niños</h2>
+			<h1 class="rainbow">Octópodo Editorial</h1>
+			<p class="sub-title_header">EDUCACIÓN | CREATIVIDAD</p>
+		</header>
+
+		<section class="mission">
+			<div class="description">
+				<p class="title_mission hidden">
+					Somos creadores apasionados de libros para niños
+				</p>
+				<p class="description_mission hidden">
+					Nuestro objetivo es acompañarlos en su desarrollo y crecimiento,
+					fomentando amor por la lectura y el aprendizaje. Cada uno de nustros
+					libros están diseñados con amor y cuidado, llenos de actividades
+					lúdicas y divertidas que estimulan su imaginación y creatividad.
+					descubre nuestras emocionantes colecciones y únete a nosotros en este
+					maravilloso viaje de descubrimiento y aprendizaje junto a tus hijos.
+				</p>
+			</div>
+			<div class="img_mom-daugther"></div>
+		</section>
+
+		<section class="collection_books">
+			<div class="card_book right_book">
+				<p class="comming-soon">Próximanente</p>
+			</div>
+			<div class="card_book" id="cursiva_book">
+				<img class="aec_book" src="./img/portada.jpg" alt="" />
+			</div>
+			<div class="card_book left_book">
+				<p class="comming-soon">Proximamente</p>
+			</div>
+
+			<div class="cursiva_book">
+				<div class="carrusel">
+					<div class="slider">
+						<div class="cursiva_book_pages slide"></div>
+					</div>
+					<div class="nav_button">
+						<button id="prev" class="button_nav-imgs"><</button>
+						<button id="next" class="button_nav-imgs">></button>
+					</div>
+				</div>
+				<div class="leyend_cursiva">
+					<div class="cancel_button">X</div>
+					<p class="title_leyend-cursiva">Aprender a escribir en Cursiva</p>
+					<p class="text_leyend-cursiva">
+						Este libro de actividades diseñado para niños es una emocionante y
+						completa herramienta de aprendizaje. Con más de 100 páginas repletas
+						de divertidos ejercicios y prácticas, los pequeños podrán
+						desarrollar su habilidad para escribir en cursiva de manera amena y
+						efectiva. ¡Descubran juntos un mundo de letras cursivas mientras se
+						divierten y adquieren una habilidad que les acompañará toda la vida!
+					</p>
+					<a href="https://www.amazon.com/" target="_blank" class="buy_amazon"
+						>Comprar</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<div class="banner">
+			<p class="title_banner">EXPLORA, CREA Y DESCUBRE</p>
+			<p class="banner_leyenda">
+				con los libros de actividades infantiles, fuente inagotable de alegría y
+				conocimiento.
+			</p>
+		</div>
+
+		<section class="newsletter">
+			<div class="title-container_newsletter">
+				<p class="title_form">Suscríbete a nuestro boletín informativo</p>
+			</div>
+			<p class="subtitle_form">
+				¡Entérate de nuestros nuevos lanzamientos y ofertas!
+			</p>
+			<form class="form_newsletter" action="send">
+				<input
+					class="input_form"
+					type="name"
+					name="name"
+					id=""
+					placeholder="Nombre"
+				/>
+				<input
+					class="input_form"
+					type="surname"
+					name="surname"
+					id=""
+					placeholder="Apellido"
+				/>
+				<input
+					class="input_form"
+					type="email"
+					name="Email"
+					id=""
+					placeholder="Email"
+				/>
+				<label>
+					<input
+						class="check_input"
+						type="checkbox"
+						id="cbox"
+						value="check_terms"
+					/>
+					Sí, suscribirme a este boletín informativo.
+				</label>
+				<input class="button_form" type="button" value="Suscribirme" />
+			</form>
+		</section>
+
+		<footer>
+			<div class="speech_footer">
+				<p class="title_footer">Valoramos enormente tus opiniones</p>
+				<p class="info_footer">
+					Al adquirir tus libros, te invitamos coordialmente a dejarnos una
+					reseña en
+					<a class="amazon_link" href="https://www.amazon.com/" target="_blank"
+						>Amazon</a
+					>, ya que nos ayudará a crecer. ¡Gracias por tu apoyo!
+				</p>
+
+				<p class="editorial_footer">© 2023 Octópodo Editorial</p>
+			</div>
+			<div class="rrss_footer">
+				<a href="https://www.pinterest.es/octopodostudio/" target="_blank">
+					<img class="pinterest_rrss" src="./img/pinterest.png" alt="" />
+				</a>
+				<p class="pinterest-follow_rrss">Síguenos en pinterest</p>
+			</div>
+		</footer>
+	</body>
+</html>
