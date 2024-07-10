@@ -14,17 +14,46 @@
 	</head>
 	<body>
 		<header>
-			<h2>Libros para niños</h2>
-			<h1 class="rainbow">Octópodo Editorial</h1>
-			<p class="sub-title_header">EDUCACIÓN | CREATIVIDAD</p>
+			<div class="nav_header">
+				<div class="logo_header">
+					<img src="./img/logo-octopodo.png" class="img-logo_header" />
+				</div>
+				<nav class="nav-menu">
+					<a class="about-us_nav" href="#about-us">Nosotros</a>
+					<a class="catalog_nav" href="#catalog">Catálogo</a>
+					<a class="newsletter_nav" href="#newsletter">Suscribirse</a>
+				</nav>
+
+				<div class="rrss_header">
+					<a href="https://www.pinterest.es/octopodostudio/" target="_blank">
+						<img
+							class="pinterest-rrss_header"
+							src="./img/icon-pinterest-240.png"
+							alt=""
+						/>
+					</a>
+					<a href="https://www.amazon.com/" target="_blank">
+						<img
+							class="amazon-rrss_header"
+							src="./img/icon-amazon-240.png"
+							alt=""
+						/>
+					</a>
+				</div>
+			</div>
+			<div class="title_header">
+				<h2>Libros para niños</h2>
+				<h1>OCTÓPODO EDITORIAL</h1>
+				<p class="sub-title_header">EDUCACIÓN | CREATIVIDAD</p>
+			</div>
 		</header>
 
-		<section class="mission">
-			<div class="description">
-				<p class="title_mission hidden">
+		<section class="about-us" id="about-us">
+			<div class="description_about-us">
+				<p class="title_about-us hidden">
 					Somos creadores apasionados de libros para niños
 				</p>
-				<p class="description_mission hidden">
+				<p class="text_about-us hidden">
 					Nuestro objetivo es acompañarlos en su desarrollo y crecimiento,
 					fomentando amor por la lectura y el aprendizaje. Cada uno de nustros
 					libros están diseñados con amor y cuidado, llenos de actividades
@@ -36,7 +65,30 @@
 			<div class="img_mom-daugther"></div>
 		</section>
 
-		<section class="collection_books">
+		<section class="latest-release">
+			<div class="book_latest-release"></div>
+			<div class="desc_latest-release">
+				<p class="title_latest-release">Ultimo lanzamiento</p>
+				<div class="buy-now_latest">
+					<p class="buy_latest-release">Puedes comprarlo en amazon</p>
+					<a class="buy-latest" href="https://www.amazon.com/" target="_blank"
+						>Comprar ahora</a
+					>
+				</div>
+			</div>
+		</section>
+
+		<div class="banner">
+			<p class="title_banner">
+				EXPLORA, CREA Y DESCUBRE
+				<span class="banner_leyenda">
+					con los libros de actividades infantiles, fuente inagotable de alegría
+					y conocimiento.</span
+				>
+			</p>
+		</div>
+
+		<section class="collection_books" id="catalog">
 			<div class="card_book right_book">
 				<p class="comming-soon">Próximanente</p>
 			</div>
@@ -75,15 +127,7 @@
 			</div>
 		</section>
 
-		<div class="banner">
-			<p class="title_banner">EXPLORA, CREA Y DESCUBRE</p>
-			<p class="banner_leyenda">
-				con los libros de actividades infantiles, fuente inagotable de alegría y
-				conocimiento.
-			</p>
-		</div>
-
-		<section class="newsletter">
+		<section class="newsletter" id="newsletter">
 			<div class="title-container_newsletter">
 				<p class="title_form">Suscríbete a nuestro boletín informativo</p>
 			</div>

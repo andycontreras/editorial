@@ -7,7 +7,9 @@
 	font-family: 'Josefin Sans', sans-serif;
 	font-style: normal;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background-color: #e2dfda;
 }
@@ -16,100 +18,188 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-	background: #0b355d;
-	border-radius: 3px;
+	background: #a9d9d0;
+	height: 5px;
 }
 
 /* header configurations */
-h1 {
-	font-size: 5rem;
-	font-weight: 500;
-	animation: rainbow 7s infinite;
-	text-align: center;
-}
-@keyframes rainbow {
-	0% {
-		color: #00be9c;
-	}
-	20% {
-		color: #3b8c66;
-	}
-	40% {
-		color: #f2668b;
-	}
-	60% {
-		color: #d74693;
-	}
-	80% {
-		color: #fdae45;
-	}
-	100% {
-		color: #00be9c;
-	}
-}
-
-h2 {
-	color: #2d3233;
-	font-weight: 300;
-	font-size: 1.7rem;
-}
-
-.sub-title_header {
-	font-size: 1.3rem;
-	font-weight: 500;
-	color: #2d3233;
-}
-
 header {
 	width: 100%;
 	height: 100vh;
+	background-image: url(./img/header-img-DOS.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.nav_header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #262524;
+	width: 100%;
+	height: 10vh;
+	text-align: center;
+	gap: 30vh;
+	border-radius: 0 0 20% 20%;
+}
+
+.nav-menu {
+	display: flex;
+	gap: 7vh;
+}
+
+.about-us_nav,
+.catalog_nav,
+.newsletter_nav {
+	text-decoration: none;
+	color: #ffff;
+}
+
+.rrss_header {
+	display: flex;
+	gap: 3vh;
+}
+
+.img-logo_header,
+.pinterest-rrss_header,
+.amazon-rrss_header {
+	width: 40px;
+	height: 40px;
+}
+
+.title_header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	margin-top: 10%;
 	gap: 10vh;
+}
+h1 {
+	font-size: 4.9rem;
+	font-weight: 600;
+	color: #ffff;
+	text-shadow: 0 0 25px #2d3233;
+}
+
+h2 {
+	color: #ffff;
+	font-weight: 400;
+	font-size: 1.9rem;
+	text-shadow: 0 0 25px #2d3233;
+}
+
+.sub-title_header {
+	font-size: 1.7rem;
+	font-weight: 500;
+	color: #ffff;
 }
 
 /* Mission section */
-.mission {
+.about-us {
 	height: 100vh;
-	width: 100%;
-	padding: 2vh 0;
-	gap: 5vh;
 	display: flex;
-	justify-content: center;
-	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
 }
-.description {
+.description_about-us {
 	width: 55%;
+}
+
+.title_about-us {
+	font-weight: 900;
+	font-size: 3rem;
+	color: #38bed7;
+	text-align: center;
+	margin-bottom: 6vh;
+}
+
+.text_about-us {
+	text-align: justify;
+	font-size: 1.4rem;
+	color: #2d3233;
+	font-family: 'Roboto', sans-serif;
 }
 
 .img_mom-daugther {
 	background-image: url(./img/mom-daugther.jpg);
 	background-size: cover;
-	width: 35%;
-	height: 80%;
+	width: 60vh;
+	height: 60vh;
 	border-radius: 50%;
-	/* box-shadow: 0px 0px 15px #2d3233; */
+	box-sizing: content-box;
 }
 
-.title_mission {
-	font-weight: 900;
-	font-size: 2.6rem;
-	color: #38bed7;
-	text-align: left;
-	/* background: linear-gradient(-35deg, #60bf81, #38bed7, #f2668b, #00be9c);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; */
-	/* -webkit-text-stroke: 1px #2d3233; */
-	margin-bottom: 6vh;
+/* Latest Release section */
+.latest-release {
+	height: 100vh;
+	background: linear-gradient(
+		#262524 0%,
+		#262524 50%,
+		#e2dfda 50%,
+		#e2dfda 100%
+	);
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	padding: 0 25vh;
 }
 
-.description_mission {
-	text-align: left;
-	font-size: 1.4rem;
-	color: #2d3233;
+.book_latest-release {
+	background-image: url(./img/portada.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 47vh;
+	height: 60vh;
+}
+
+.desc_latest-release {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10%;
+	margin-left: 5%;
+}
+
+.title_latest-release {
+	font-size: 2rem;
+	color: #e2dfda;
+}
+
+.buy_latest-release {
+	margin: 15px 0;
+	font-size: 1.5rem;
+}
+.buy-latest {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: #262524;
+	padding: 10px;
+	background-color: #e2dfda;
+	border: 1px solid #2d3233;
+}
+/* Banner section */
+.banner {
+	height: 30vh;
+	background-color: #a9d9d0;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding: 0 5%;
+}
+
+.title_banner {
+	font-size: 2rem;
+	font-weight: 800;
+	font-family: 'Roboto', sans-serif;
+	color: #00be9c;
+}
+
+.banner_leyenda {
+	font-size: 1.5rem;
+	color: #262524;
+	font-weight: 300;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -124,8 +214,9 @@ header {
 	}
 }
 
-.description_mission,
-.title_mission,
+.img_mom-daugther,
+.title_about-us,
+.text_about-us,
 .banner_leyenda,
 .title_banner {
 	view-timeline-name: --blocks;
@@ -271,26 +362,6 @@ header {
 }
 .buy_amazon:hover {
 	background-color: #93d94e;
-}
-
-/* Banner section */
-.banner {
-	height: 30vh;
-	background-color: #e2dfda;
-	text-align: center;
-}
-
-.banner_leyenda {
-	font-size: 1.5rem;
-	font-family: 'Roboto', sans-serif;
-}
-
-.title_banner {
-	font-size: 2.7rem;
-	font-weight: 800;
-	font-family: 'Roboto', sans-serif;
-	color: #00be9c;
-	margin-bottom: 4vh;
 }
 
 /* Newsletter form  */
