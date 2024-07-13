@@ -54,6 +54,11 @@ header {
 	text-decoration: none;
 	color: #ffff;
 }
+.about-us_nav:hover,
+.catalog_nav:hover,
+.newsletter_nav:hover {
+	color: #00be9c;
+}
 
 .rrss_header {
 	display: flex;
@@ -110,7 +115,7 @@ h2 {
 	font-weight: 900;
 	font-size: 3rem;
 	color: #38bed7;
-	text-align: center;
+	text-align: left;
 	margin-bottom: 6vh;
 }
 
@@ -134,55 +139,63 @@ h2 {
 .latest-release {
 	height: 100vh;
 	background: linear-gradient(
-		#262524 0%,
-		#262524 50%,
+		#e2dfda 0%,
 		#e2dfda 50%,
-		#e2dfda 100%
+		#262524 50%,
+		#262524 100%
 	);
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	padding: 0 25vh;
+	gap: 10%;
 }
 
 .book_latest-release {
-	background-image: url(./img/portada.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 47vh;
-	height: 60vh;
+	height: 70vh;
+	width: 54vh;
+	box-shadow: -10px 3px 10px #262524;
+}
+
+.cover_latest-release {
+	height: 100%;
+	overflow: hidden;
 }
 
 .desc_latest-release {
 	height: 50vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	gap: 10%;
-	margin-left: 5%;
+	justify-content: space-around;
 }
 
 .title_latest-release {
-	font-size: 2rem;
-	color: #e2dfda;
+	font-size: 3rem;
+	color: #2d3233;
 }
 
 .buy_latest-release {
-	margin: 15px 0;
 	font-size: 1.5rem;
+	color: #e2dfda;
 }
+
+.buy-buttom_latest {
+	border: 1px solid #e2dfda;
+	width: 155px;
+	padding: 13px 0;
+	text-align: center;
+	margin-top: 2vh;
+}
+
 .buy-latest {
 	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
-	color: #262524;
-	padding: 10px;
-	background-color: #e2dfda;
-	border: 1px solid #2d3233;
+	color: #e2dfda;
 }
 /* Banner section */
 .banner {
 	height: 30vh;
-	background-color: #a9d9d0;
+	background-color: #55a794;
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -191,9 +204,10 @@ h2 {
 
 .title_banner {
 	font-size: 2rem;
-	font-weight: 800;
+	font-weight: 400;
 	font-family: 'Roboto', sans-serif;
-	color: #00be9c;
+	color: #93d94e;
+	text-align: center;
 }
 
 .banner_leyenda {
@@ -228,17 +242,30 @@ h2 {
 }
 /* Collection books */
 .collection_books {
+}
+
+.title-collection_books {
+	font-size: 2rem;
+	color: #2d3233;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 7vh;
+	height: 1vh;
+}
+
+.container-collection_books {
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 5%;
 }
 .card_book {
-	width: 47vh;
-	height: 63%;
+	width: 40vh;
+	height: 58%;
 	margin: 0 5vh;
 	border-radius: 5px;
-	box-shadow: 1px 1px 10px #000;
+	box-shadow: -10px 10px 25px #262524;
 	overflow: hidden;
 	transition: transform 0.3s ease;
 }
@@ -250,11 +277,11 @@ h2 {
 	transition: transform 0.3s ease;
 }
 .card_book:hover {
-	transform: scale(1.3);
+	transform: scale(1.1);
 }
 
 .comming-soon {
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	font-weight: 800;
 	color: #e2dfda;
 }
@@ -366,7 +393,25 @@ h2 {
 
 /* Newsletter form  */
 .newsletter {
+	display: flex;
+	padding: 0 10vh;
+}
+
+.container-img_newsletter {
+	width: 40%;
+	margin-top: 10vh;
+	align-items: center;
+}
+
+.img_newsletter {
+	border-radius: 5%;
 	width: 100%;
+	height: 65%;
+	overflow: hidden;
+}
+
+.newsletter_container {
+	width: 60%;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -375,7 +420,7 @@ h2 {
 }
 
 .title-container_newsletter {
-	width: 39%;
+	width: 75%;
 	height: 13vh;
 	background-color: #38bed7;
 	border-radius: 5vh;
@@ -405,7 +450,7 @@ h2 {
 	border: none;
 	border-radius: 2vh;
 	height: 5vh;
-	width: 45%;
+	width: 65%;
 	padding: 1.5vh 5vh;
 }
 
@@ -414,19 +459,21 @@ h2 {
 }
 
 .button_form {
-	width: 20%;
+	width: 30%;
 	height: 8vh;
 	border: none;
 	border-radius: 3vh;
 	background-color: #00be9c;
 	font-size: 1rem;
 	font-weight: 600;
+	margin-right: -50%;
 }
 
 /* foote config */
 footer {
-	height: 60vh;
+	height: 50vh;
 	display: flex;
+	background-color: #262524;
 }
 
 .title_footer {
@@ -441,6 +488,7 @@ footer {
 .info_footer {
 	font-size: 1.3rem;
 	font-family: 'Roboto', sans-serif;
+	color: #e2dfda;
 	width: 75%;
 	padding-top: 5vh;
 	padding-left: 15vh;
@@ -449,11 +497,15 @@ footer {
 .amazon_link {
 	text-decoration: none;
 	font-family: 'Roboto', sans-serif;
-	color: #0b355d;
+	color: #38bed7;
+}
+.amazon_link:hover {
+	color: #93d94e;
 }
 
 .editorial_footer {
 	font-family: 'Roboto', sans-serif;
+	color: #e2dfda;
 	padding-top: 5vh;
 	padding-left: 15vh;
 }
@@ -461,16 +513,17 @@ footer {
 .rrss_footer {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	width: 50%;
+	padding-top: 7vh;
 }
 
 .pinterest_rrss {
-	width: 10vh;
-	height: 10vh;
+	width: 7vh;
+	height: 7vh;
 }
 
 .pinterest-follow_rrss {
 	font-size: 0.7rem;
+	color: #e2dfda;
 }

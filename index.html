@@ -66,14 +66,18 @@
 		</section>
 
 		<section class="latest-release">
-			<div class="book_latest-release"></div>
+			<div class="book_latest-release">
+				<img class="cover_latest-release" src="./img/portada.jpg" alt="" />
+			</div>
 			<div class="desc_latest-release">
-				<p class="title_latest-release">Ultimo lanzamiento</p>
+				<p class="title_latest-release">Último lanzamiento</p>
 				<div class="buy-now_latest">
 					<p class="buy_latest-release">Puedes comprarlo en amazon</p>
-					<a class="buy-latest" href="https://www.amazon.com/" target="_blank"
-						>Comprar ahora</a
-					>
+					<div class="buy-buttom_latest">
+						<a class="buy-latest" href="https://www.amazon.com/" target="_blank"
+							>Comprar ahora</a
+						>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -89,14 +93,17 @@
 		</div>
 
 		<section class="collection_books" id="catalog">
-			<div class="card_book right_book">
-				<p class="comming-soon">Próximanente</p>
-			</div>
-			<div class="card_book" id="cursiva_book">
-				<img class="aec_book" src="./img/portada.jpg" alt="" />
-			</div>
-			<div class="card_book left_book">
-				<p class="comming-soon">Proximamente</p>
+			<p class="title-collection_books">Nuestro catálogo</p>
+			<div class="container-collection_books">
+				<div class="card_book right_book">
+					<p class="comming-soon">Próximanente</p>
+				</div>
+				<div class="card_book" id="cursiva_book">
+					<img class="aec_book" src="./img/portada.jpg" alt="" />
+				</div>
+				<div class="card_book left_book">
+					<p class="comming-soon">Próximamente</p>
+				</div>
 			</div>
 
 			<div class="cursiva_book">
@@ -128,45 +135,51 @@
 		</section>
 
 		<section class="newsletter" id="newsletter">
-			<div class="title-container_newsletter">
-				<p class="title_form">Suscríbete a nuestro boletín informativo</p>
+			<div class="container-img_newsletter">
+				<img class="img_newsletter" src="./img/kid-reading-a-book.jpg" alt="" />
 			</div>
-			<p class="subtitle_form">
-				¡Entérate de nuestros nuevos lanzamientos y ofertas!
-			</p>
-			<form class="form_newsletter" action="send">
-				<input
-					class="input_form"
-					type="name"
-					name="name"
-					id=""
-					placeholder="Nombre"
-				/>
-				<input
-					class="input_form"
-					type="surname"
-					name="surname"
-					id=""
-					placeholder="Apellido"
-				/>
-				<input
-					class="input_form"
-					type="email"
-					name="Email"
-					id=""
-					placeholder="Email"
-				/>
-				<label>
+
+			<div class="newsletter_container">
+				<div class="title-container_newsletter">
+					<p class="title_form">Suscríbete a nuestro boletín informativo</p>
+				</div>
+				<p class="subtitle_form">
+					¡Entérate de nuestros nuevos lanzamientos y ofertas!
+				</p>
+				<form class="form_newsletter" action="send">
 					<input
-						class="check_input"
-						type="checkbox"
-						id="cbox"
-						value="check_terms"
+						class="input_form"
+						type="name"
+						name="name"
+						id=""
+						placeholder="Nombre"
 					/>
-					Sí, suscribirme a este boletín informativo.
-				</label>
-				<input class="button_form" type="button" value="Suscribirme" />
-			</form>
+					<input
+						class="input_form"
+						type="surname"
+						name="surname"
+						id=""
+						placeholder="Apellido"
+					/>
+					<input
+						class="input_form"
+						type="email"
+						name="Email"
+						id=""
+						placeholder="Email"
+					/>
+					<label>
+						<input
+							class="check_input"
+							type="checkbox"
+							id="cbox"
+							value="check_terms"
+						/>
+						Sí, suscribirme a este boletín informativo.
+					</label>
+					<input class="button_form" type="button" value="Suscribirme" />
+				</form>
+			</div>
 		</section>
 
 		<footer>
@@ -184,7 +197,11 @@
 			</div>
 			<div class="rrss_footer">
 				<a href="https://www.pinterest.es/octopodostudio/" target="_blank">
-					<img class="pinterest_rrss" src="./img/pinterest.png" alt="" />
+					<img
+						class="pinterest_rrss"
+						src="./img/icon-pinterest-240.png"
+						alt=""
+					/>
 				</a>
 				<p class="pinterest-follow_rrss">Síguenos en pinterest</p>
 			</div>
