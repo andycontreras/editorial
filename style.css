@@ -22,6 +22,42 @@ body::-webkit-scrollbar-thumb {
 	height: 5px;
 }
 
+#go-to-start {
+	position: fixed;
+	z-index: 1000;
+	right: 30px;
+	bottom: 30px;
+	background-color: #00adef;
+	width: 64px;
+	height: 64px;
+	color: #e2dfda;
+	text-align: center;
+	border-radius: 50%;
+	transition: all 0.2s;
+	justify-content: center;
+	box-shadow: 0 0 5px #2d3233;
+}
+
+#go-to-start:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.hide-button {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.show-button {
+	opacity: 1;
+	visibility: visible;
+}
+
+.fa {
+	font-size: 3rem;
+	rotate: -90deg;
+	text-shadow: 0 0 5px #2d3233;
+}
 /* header configurations */
 header {
 	width: 100%;

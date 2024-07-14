@@ -53,7 +53,33 @@ function carrusel() {
 		renderIMG();
 	};
 }
+
+function goToStart() {
+	addEventListener('DOMContentLoaded', () => {
+		const starButton = document.getElementById('go-to-start');
+
+		const get_pixels = () =>
+			document.documentElement.scrollTop || document.body.scrollTop;
+		const backTop = () => {
+			if (get_pixels() > 0) {
+				scrollTo(0, 0);
+			}
+		};
+
+		const showButton = () => {
+			if (get_pixels() > 50) {
+				starButton.className = 'show-button';
+			} else {
+				starButton.className = 'hide-button';
+			}
+		};
+
+		starButton.addEventListener('click', backTop);
+		window.addEventListener('scroll', showButton);
+	});
+}
 (() => {
+	goToStart();
 	bookList();
 	carrusel();
 })();
