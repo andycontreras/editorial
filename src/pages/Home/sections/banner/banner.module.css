@@ -1,0 +1,30 @@
+.banner_container {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  padding: 30px 50px;
+  background-color: #00d1aa;
+  /* background-color: #118ef5; */
+}
+
+.banner_content {
+  display: flex;
+  width: 100%;
+  padding: 0 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_first {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 600;
+  color: #33322d;
+}
+
+.banner_second {
+  font-weight: lighter;
+  font-size: 0.8em;
+  color: #33322d;
+}

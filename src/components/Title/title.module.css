@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.title_container {
+  margin-bottom: 20px;
+}
+.title_style {
+  font-size: 2.5em;
+}
+.blue {
+  color: #38bed7;
+}
+
+.main {
+  font-family: 'Josefin Sans', serif;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.secondary {
+  font-family: 'Josefin Sans', serif;
+  font-size: 2.7em;
+  font-weight: 400;
+}
+
+.three {
+  font-family: 'Josefin Sans', serif;
+  font-size: 2.7em;
+  font-weight: 700;
+}

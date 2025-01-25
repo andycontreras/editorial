@@ -1,0 +1,33 @@
+.footer_container {
+  min-height: 40vh;
+  display: flex;
+  padding: 60px 50px;
+  background: #33312c;
+  /* background: linear-gradient(120deg, #262524, #404343); */
+}
+.footer_info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.footer_leyend {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #f2f2f2;
+  text-align: left;
+  width: 80%;
+  padding-bottom: 20px;
+}
+
+.footer_registration {
+  color: #f2f2f2;
+  font-weight: lighter;
+}
+
+.footer_rrss {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+  width: 40%;
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.newest_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  padding: 30px 30vh;
+  background: linear-gradient(
+    #f2f2f2 0%,
+    #f2f2f2 50%,
+    #33312c 50%,
+    #33312c 100%
+  );
+}
+.flayer_container {
+  height: 70%;
+  box-shadow: -10px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.flayer {
+  height: 100%;
+}
+
+.flayer_info_container {
+  padding-top: 50px;
+}
+
+.flayer_info_subtitle {
+  font-family: 'Josefin Sans', serif;
+  font-size: 1.5em;
+  padding-top: 15px;
+  color: #f2f2f2;
+  margin-top: 50px;
+}
+
+.flayer_info_button {
+  border: 1px solid #f2f2f2;
+  width: 130px;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 2vh;
+  border-radius: 3px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.flayer_buy {
+  font-family: 'Josefin Sans', serif;
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 1.2em;
+  font-weight: 300;
+}

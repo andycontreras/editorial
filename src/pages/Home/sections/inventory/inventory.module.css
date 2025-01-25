@@ -1,0 +1,32 @@
+.inventory_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.bookgrid_container {
+  display: flex;
+  justify-content: center;
+  padding: 60px 50px;
+  width: 100%;
+  gap: 70px;
+  /* background: linear-gradient(180deg, #0f4679, #0b4e5c); */
+  /* background-color: #0b355d; */
+}
+
+.booklist_container {
+  background-color: #0b4e5c;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.booklist_goto {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: aliceblue;
+}
