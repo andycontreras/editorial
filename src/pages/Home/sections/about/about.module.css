@@ -33,3 +33,25 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 430px) {
+  .about_container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about_image_container {
+    display: none;
+  }
+
+  .about_description {
+    gap: 30px;
+    padding-right: 0;
+    width: 100%;
+    padding: 0 30px;
+  }
+  .description_content {
+    font-size: 1.2em;
+    text-align: justify;
+  }
+}

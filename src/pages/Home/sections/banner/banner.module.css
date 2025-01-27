@@ -28,3 +28,19 @@
   font-size: 0.8em;
   color: #33322d;
 }
+
+@media screen and (max-width: 430px) {
+  .banner_container {
+    padding: 0 30px;
+  }
+
+  .banner_content {
+    padding: 0;
+  }
+
+  .banner_first {
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+  }
+}

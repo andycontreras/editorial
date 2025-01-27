@@ -48,3 +48,31 @@ h1 {
   color: #dad7d2;
   font-weight: 400;
 }
+
+@media screen and (max-width: 430px) {
+  .hero_container {
+  }
+
+  .hero_image_container {
+    margin: 0;
+  }
+
+  .hero_title {
+  }
+
+  h1 {
+    font-family: 'Josefin Sans', serif;
+    font-size: 4em;
+    font-weight: 600;
+    color: #f2f2f2;
+    font-style: normal;
+    padding: 35px 0;
+    text-shadow: 0 1px 5px #33322d;
+  }
+
+  .hero_subtitle {
+  }
+
+  .hero_credits {
+  }
+}

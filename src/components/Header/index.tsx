@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Header.module.css';
 import { IconComponent } from '../IconsLinks/IconLink';
 
 export function Header() {
+  useEffect(() => {
+    const cancelButton = document.getElementById('cancel');
+    const burgerButton = document.getElementById('burger_menu');
+    const navMenu = document.getElementById('menu_nav');
+    const menuLink = document.querySelectorAll('#burger_link');
+
+    menuLink.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        setTimeout(() => {
+          navMenu.style.display = 'none';
+          navMenu.style.flex = '0';
+        }, 100);
+      });
+    });
+
+    cancelButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      navMenu.style.display = 'none';
+      navMenu.style.flex = '0';
+    });
+    burgerButton.addEventListener('click', (e) => {
+      e.preventDefault();
+      navMenu.style.display = 'flex';
+    });
+  }, []);
   return (
     <>
       <div className={styles.header_container}>
@@ -13,6 +38,7 @@ export function Header() {
             alt="Octopodo Editorial"
           />
         </div>
+
         <nav className={styles.nav_header}>
           <ul className={styles.nav_ul}>
             <li className={styles.nav_li}>
@@ -32,6 +58,29 @@ export function Header() {
             </li>
           </ul>
         </nav>
+
+        <div className={styles.burger_container} id="burger_menu">
+          <ul className={styles.burger}>
+            <li className={styles.burger_line}></li>
+            <li className={styles.burger_line}></li>
+            <li className={styles.burger_line}></li>
+          </ul>
+        </div>
+
+        <div className={styles.phone_menu} id="menu_nav">
+          <div className={styles.cancel_menu} id="cancel">
+            X
+          </div>
+          <a className={styles.menu_link} id="burger_link" href="#about">
+            Nosotros
+          </a>
+          <a className={styles.menu_link} id="burger_link" href="#inventory">
+            Catálogo
+          </a>
+          <a className={styles.menu_link} id="burger_link" href="#newsletter">
+            Suscribirse
+          </a>
+        </div>
 
         <div className={styles.rrss_container}>
           <IconComponent

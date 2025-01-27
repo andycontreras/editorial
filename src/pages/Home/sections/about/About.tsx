@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './about.module.css';
 import momDaugther from '@/assets/images/mom-daugther.jpg';
 import { TitleComponent } from '@/components/Title/Title';
+
 export function AboutSection() {
   return (
     <section className={styles.about_container} id="about">

@@ -13,12 +13,16 @@ import { NewsletterSection } from './sections/newsletter/Newsletter';
 export function Home() {
   const navigate = useNavigate();
   const sectionID = ['hero', 'about', 'newest', 'inventory', 'newsletter'];
-  const visibleSection = UseVisibleSection(sectionID);
 
+  const visibleSection = UseVisibleSection(sectionID);
   useEffect(() => {
-    if (visibleSection) {
+    if (visibleSection === 'hero') {
+      navigate('/');
+    } else {
       navigate(`#${visibleSection}`, { replace: true });
     }
+
+    console.log(visibleSection);
   }, [visibleSection, navigate]);
   return (
     <div className={styles.home_container}>
