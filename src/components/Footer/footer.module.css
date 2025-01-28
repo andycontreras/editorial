@@ -3,7 +3,6 @@
   display: flex;
   padding: 60px 50px;
   background: #33312c;
-  /* background: linear-gradient(120deg, #262524, #404343); */
 }
 .footer_info {
   display: flex;
@@ -30,4 +29,29 @@
   align-items: flex-end;
   gap: 30px;
   width: 40%;
+}
+
+@media screen and (max-width: 430px) {
+  .footer_container {
+    padding: 20px 30px;
+    flex-direction: column;
+  }
+  .footer_info {
+    width: 100%;
+  }
+  .footer_leyend {
+    font-size: 1em;
+    width: 100%;
+    font-weight: 300;
+    text-align: justify;
+    padding-bottom: 10px;
+  }
+
+  .footer_registration {
+    font-size: 0.8em;
+  }
+  .footer_rrss {
+    width: 100%;
+    padding-top: 20px;
+  }
 }

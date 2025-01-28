@@ -70,14 +70,15 @@
   }
 
   .flayer_info_container {
-    padding-top: 0;
+    justify-self: unset;
+    padding-top: 20px;
     height: 50%;
   }
 
   .flayer_info_buy {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
     width: max-content;
   }

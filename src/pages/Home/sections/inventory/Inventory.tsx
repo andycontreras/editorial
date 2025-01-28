@@ -11,6 +11,11 @@ const booksList = [
     alt: 'Aprender a escribir en cursiva',
     bookId: 'b1',
   },
+  {
+    src: cardImage,
+    alt: 'Aprender a escribir en cursiva',
+    bookId: 'b2',
+  },
 ];
 export function InventorySection() {
   return (
@@ -31,8 +36,8 @@ export function InventorySection() {
           />
         ))}
       </div>
-      <div className={styles.booklist_container}>
-        <a className={styles.booklist_goto} href="#">
+      <div className={styles.inventoryList_container}>
+        <a className={styles.inevntoryList_link} href="#">
           Ver más
         </a>
       </div>
